@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Montando Palavras</title>
+    <link rel="icon" href="imagem-musica/mushroom.png" type="image/png">
+    <link rel="stylesheet" href="css/palavras.css">
+</head>
+<body>
+    <h1>Montando Palavras</h1>
+
+    <div id="area-jogo">
+        <div class="palavra" id="letras-embalhadas"></div>
+        <div class="caixa-palavra" id="caixa-resposta"></div>
+    </div>
+
+    <button id="reiniciar">Reiniciar Jogo</button>
+
+    <div id="mensagem-acerto" style="display: none;">
+        <h2>Parabéns! Você acertou!</h2>
+    </div>
+
+    <audio id="som-parabens">
+        <source src="som/parabens.mp3" type="audio/mpeg">
+    </audio>
+    <audio id="som-erro">
+        <source src="som/erro.mp3" type="audio/mpeg">
+    </audio>
+
+    <footer>
+        <img src="imagem-musica/mushroom.png" alt="Cogumelo" class="cogumelo">
+        <p class="assinatura">Desenvolvido por Priscila Farias</p>
+    </footer>
+
+    <script src="js/palavras.js"></script>
+
+    <div class="menu-voltar">
+        <a href="index.html">Voltar ao Menu</a>
+    </div>
+    
+</body>
+</html>

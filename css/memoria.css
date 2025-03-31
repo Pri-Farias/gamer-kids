@@ -1,0 +1,148 @@
+body {
+    background: linear-gradient(to right, #FFDEE9, #B5FFFC);
+    font-family: Arial, sans-serif;
+    text-align: center;
+}
+
+h1 {
+    color: #FF6F61;
+    animation: pisca 1s infinite;
+}
+
+@keyframes pisca {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0.5; }
+}
+
+.tabuleiro {
+    display: grid;
+    grid-template-columns: repeat(4, 150px);
+    gap: 10px;
+    justify-content: center;
+    margin: 20px auto;
+}
+
+.carta {
+    width: 100px;
+    height: 100px;
+    border: 2px solid#fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #FFD700;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: transform 0.5s;
+    transform-style: preserve-3d;
+    position: relative;
+    font-size: 60px;
+}
+
+.carta.virada {
+    transform: rotateY(180deg);
+}
+
+.carta .frente, .carta .verso {
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    position: absolute;
+    backface-visibility: hidden;
+}
+
+.carta .frente {
+    background-color: #FFF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2em;
+}
+
+.carta .verso {
+    background-color: #FF6F61;
+    transform: rotateY(180deg);
+}
+
+#reiniciar {
+    padding: 10px 20px;
+    background-color: #FF6F61;
+    color: #FFF;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s;
+}
+
+#reiniciar:hover {
+    transform: scale(1.1);
+}
+
+footer {
+    margin-top: 20px;
+    font-weight: bold;
+    color: #FF6F61;
+    animation: balanca 2s infinite;
+}
+
+@keyframes balanca {
+    0%, 100% { transform: rotate(0); }
+    50% { transform: rotate(5deg); }
+}
+.assinatura {
+    color: #ff6f61;
+    font-size: 1.5em;
+    font-weight: 700;
+    margin-top: 30px;
+    text-align: left;
+    margin-left: 70px;
+
+}
+.cogumelo {
+    width: 50px;
+    margin-top: -15px;
+    float: left;
+    display: flex;
+    align-items: center;
+
+}
+.botao-musica {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #FF6F61;
+    color: white;
+    border: none;
+    border-radius: 50%;
+    padding: 15px;
+    font-size: 1.5em;
+    cursor: pointer;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s;
+}
+
+.botao-musica:hover {
+    transform: scale(1.2);
+}
+
+.menu-voltar {
+    margin-top: 20px;
+}
+
+.menu-voltar a {
+    position: fixed;
+    bottom: 30px;
+    right: 100px;
+    padding: 10px 20px;
+    background-color: #ff6347;
+    color: white;
+    text-decoration: none;
+    border-radius: 30px;
+    transition: background-color 0.3s;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.menu-voltar a:hover {
+    background-color: #FFD700 ;
+}

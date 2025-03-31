@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jogo da Memória</title>
+    <link rel="icon" href="imagem-musica/mushroom.png" type="image/png">
+    <link rel="stylesheet" href="css/memoria.css">
+</head>
+<body>
+    <h1>Jogo da Memória</h1>
+    <div class="tabuleiro"></div>
+    <div class="contador">
+        Movimentos: <span id="movimentos">0</span>
+    </div>
+    <button id="reiniciar">Reiniciar Jogo</button>
+    <footer>
+        <img src="imagem-musica/mushroom.png" alt="Cogumelo" class="cogumelo">
+        <p class="assinatura">Desenvolvido por Priscila Farias</p>
+    </footer>
+
+    <audio id="musica-fundo" loop>
+        <source src="imagem-musica/musica.mp3" type="audio/mpeg">
+    </audio>
+    
+    <button id="controle-musica" class="botao-musica">🔊</button>
+
+    <script src="js/memoria.js"></script>
+    
+    <div class="menu-voltar">
+        <a href="index.html">Voltar ao Menu</a>
+    </div>
+    
+</body>
+</html>

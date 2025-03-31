@@ -1,0 +1,153 @@
+body {
+background: linear-gradient(to right, #FFDEE9, #B5FFFC);
+    font-family: Arial, sans-serif;
+    text-align: center;
+}
+
+h1 {
+    font-size: 3em;
+    color: #ff6347;
+    text-shadow: 2px 2px #ff4500;
+    animation: piscar 1.5s infinite alternate;
+}
+
+@keyframes piscar {
+    from { opacity: 0.6; }
+    to { opacity: 1; }
+}
+
+#jogo {
+    display: inline-block;
+    position: relative;
+    background-image: url('imagens/casinha.png');
+    background-size: cover;
+    
+}
+
+canvas {
+    border: 5px solid #000;
+    width: 800px;
+    height: 400px;
+}
+
+.nivel {
+    margin-top: 10px;
+}
+
+.nivel button {
+    padding: 10px;
+    margin: 5px;
+    margin-top: 10px;
+    font-size: 20px;
+    background: linear-gradient(to right, #ff6347, #74e997);
+    color: white;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.nivel button:hover {
+    background: linear-gradient(to right, #df7c9d, #75c0be);
+}
+.mensagem {
+    font-size: 2em;
+    color: #ff6347;
+    animation: saltar 1s infinite;
+}
+
+@keyframes saltar {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-10px); }
+}
+
+.decoraçao-imagem {
+    position: absolute;
+    width: 60px;
+    opacity: 0.8;
+    animation: flutuar 5s infinite ease-in-out;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;  
+    gap: 20px;
+}
+
+@keyframes flutuar {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-20px); }
+}
+
+.decoraçao-imagem:nth-child(1) { top: 20%; left: 5%; }
+.decoraçao-imagem:nth-child(2) { top: 25%; right: 5%; }
+.decoraçao-imagem:nth-child(3) { bottom: 30%; left: 10%; }
+.decoraçao-imagem:nth-child(4) { bottom: 10%; right: 15%; }
+.decoraçao-imagem:nth-child(5) { top: 15%; left: 10%; }
+.decoraçao-imagem:nth-child(6) { top: 20%; right: 15%; }
+.decoraçao-imagem:nth-child(7) { bottom: 5%; left: 5%; }
+.decoraçao-imagem:nth-child(8) { bottom: 30%; right: 10%; }
+.decoraçao-imagem:nth-child(9) { top: 40%; left: 15%; }
+
+.assinatura {
+    color: #ff6f61;
+    font-size: 1.5em;
+    font-weight: 700;
+    margin-top: -10px;
+    text-align: left;
+    margin-left: 70px111;
+    animation: piscar 1.5s infinite alternate;
+}
+
+
+.cogumelo {
+    width: 50px;
+    margin-top: -15px;
+    float: left;
+    display: flex;
+    align-items: center;
+    animation: piscar 1.5s infinite alternate;
+
+}
+
+@keyframes piscar {
+    from { opacity: 0.6; }
+    to { opacity: 1; }
+}
+
+#botao-volume {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    font-size: 3em;
+    background-color: #ff6347;
+    color: white;
+    border: none;
+    border-radius: 100%;
+    cursor: pointer;
+    box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.3);
+    transition: background-color 0.3s;
+}
+
+#botao-volume:hover {
+    background-color:greenyellow;
+}
+
+.menu-voltar {
+    margin-top: 20px;
+}
+
+.menu-voltar a {
+    position: fixed;
+    bottom: 10px;
+    right: 20px;
+    padding: 10px 20px;
+    background-color: #ff6347;
+    color: white;
+    text-decoration: none;
+    border-radius: 30px;
+    transition: background-color 0.3s;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.menu-voltar a:hover {
+    background-color: #FFD700 ;
+}

@@ -1,0 +1,101 @@
+body {
+    background: linear-gradient(to right, #FFDEE9, #B5FFFC);
+    font-family: Arial, sans-serif;
+    text-align: center;
+}
+.assinatura {
+    color: #ff6f61;
+    font-size: 1.5em;
+    font-weight: 700;
+    margin-top: 30px;
+    text-align: left;
+    margin-left: 70px;
+
+}
+.cogumelo {
+    width: 50px;
+    margin-top: -15px;
+    float: left;
+    display: flex;
+    align-items: center;
+
+}
+.decoraçao-imagem {
+    position: absolute;
+    width: 60px;
+    opacity: 0.4;
+    animation: flutuar 5s infinite ease-in-out;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;  
+    gap: 20px;
+}
+@keyframes flutuar {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-20px); }
+}
+
+.decoraçao-imagem:nth-child(1) { top: 20%; left: 5%; }
+.decoraçao-imagem:nth-child(2) { top: 25%; right: 5%; }
+.decoraçao-imagem:nth-child(3) { bottom: 15%; left: 15%; }
+.decoraçao-imagem:nth-child(4) { bottom: 10%; right: 15%; }
+.decoraçao-imagem:nth-child(5) { top: 15%; left: 20%; }
+.decoraçao-imagem:nth-child(6) { top: 20%; right: 15%; }
+.decoraçao-imagem:nth-child(7) { bottom: 20%; left: 5%; }
+.decoraçao-imagem:nth-child(8) { bottom: 30%; right: 10%; }
+.decoraçao-imagem:nth-child(9) { top: 25%; left: 15%; }
+
+
+
+
+.titulo-animado {
+    font-size: 3em;
+    color: #ff6f61;
+    animation: pulsar 2s infinite;
+}
+
+.botao-animado {
+    background-color: #ff6f61;
+    color: white;
+    border: none;
+    padding: 15pc 30px;
+    margin: 20px;
+    font-size: 1.2em;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: transform 0.2s;
+}
+.botao-animado:hover {
+    transform: scale(1.1);
+}
+
+@keyframes pulsar {
+    0%, 100% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.1);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+.botao-musica {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #FF6F61;
+    color: white;
+    border: none;
+    border-radius: 50%;
+    padding: 15px;
+    font-size: 1.5em;
+    cursor: pointer;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s;
+}
+
+.botao-musica:hover {
+    transform: scale(1.2);
+}

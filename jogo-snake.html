@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Snake Game</title>
+    <link rel="icon" href="imagem-musica/mushroom.png" type="image/png">
+    <link rel="stylesheet" href="css/snake.css">
+
+</head>
+<body>
+   
+    <h1>Snake Game</h1>
+    <div id="jogo">
+        <canvas id="snakeCanvas" width="400" height="400"></canvas>
+    </div>
+    <div class="nivel">
+        <button onclick="iniciarJogo(150)">Fácil</button>
+        <button onclick="iniciarJogo(100)">Médio</button>
+        <button onclick="iniciarJogo(50)">Difícil</button>
+    </div>
+    <button id="botao-volume">🔊</button>
+    <audio id="musica-fundo" src="musicas/musica.mp3" loop autoplay></audio>
+    <audio id="som-comer" src="audio/comer.mp3"></audio>
+    <audio id="som-colisao" src="audio/colisao.mp3"></audio>
+
+    <div class="decoraçao">
+        <img src="imagens/cobra.png" class="decoraçao-imagem" alt="snake">
+        <img src="imagens/cobra.png" class="decoraçao-imagem" alt="snake">
+        <img src="imagens/cobra.png" class="decoraçao-imagem" alt="snake">
+        <img src="imagens/cobra.png" class="decoraçao-imagem" alt="snake">
+        <img src="imagens/cobra.png" class="decoraçao-imagem" alt="snake">
+        <img src="imagens/cobra.png" class="decoraçao-imagem" alt="snake">
+        <img src="imagens/cobra.png" class="decoraçao-imagem" alt="snake">
+        <img src="imagens/cobra.png" class="decoraçao-imagem" alt="snake">
+        <img src="imagens/cobra.png" class="decoraçao-imagem" alt="snake">
+    </div>
+
+    <footer>
+        <img src="imagem-musica/mushroom.png" alt="Cogumelo" class="cogumelo">
+        <p class="assinatura">Desenvolvido por Priscila Farias</p>
+    </footer>
+
+
+    <script src="js/snake.js"></script>
+
+    <div class="menu-voltar">
+        <a href="index.html">Voltar ao Menu</a>
+    </div>
+</body>
+</html>
