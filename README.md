@@ -1,3 +1,5 @@
+![Status](https://img.shields.io/badge/Status-Em%20Desenvolvimento-yellow)
+
 # 🎮 Gamer Kids  
 Jogos educativos para crianças desenvolvidos com HTML, CSS e JavaScript.  
 
